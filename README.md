@@ -1,44 +1,25 @@
-# Example app with Mocha tests
+# TwitSplit App
 
-This example features an app with Mocha tests.
+The product Tweeter allows users to post short messages limited to 50 characters
+each.
+Sometimes, users get excited and write messages longer than 50 characters.
+Instead of rejecting these messages, we would like to add a new feature that will split the
+message into parts and send multiple messages on the user's behalf,
+all of them meeting the 50 character requirement.
 
 ## How to use
 
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-mocha with-mocha-app
-# or
-yarn create next-app --example with-mocha with-mocha-app
-```
-
-### Download manually
-
-Download the example:
-
-```bash
-curl https://codeload.github.com/vercel/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-mocha
-cd with-mocha
-```
+Clone source form (https://github.com/tuannguyen1702/TwitSplit.git)
 
 Install it and run:
 
 ```bash
 npm install
 npm run dev
-# or
-yarn
-yarn dev
 ```
 
 ## Run Mocha tests
 
 ```bash
 npm run test
-# or
-yarn test
 ```
-
-> A very important part of this example is the `.babelrc` file which configures the `test` environment to use `babel-preset-env` and configures it to transpile modules to `commonjs`). [Learn more](https://github.com/vercel/next.js/issues/2895).
