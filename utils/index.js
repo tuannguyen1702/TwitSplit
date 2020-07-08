@@ -87,9 +87,8 @@ const splitStringWithEstimatedArrayLen = (
 export function splitString(value, len = 50) {
   if(hasWordNoSpace(value)) return null;
   // If length of the input value is less then len (50), it will be return value.
-  const indicatorDefault = '1/1 ';
-  if (value.length <= len - indicatorDefault.length) {
-    return [`${indicatorDefault}${value}`];
+  if (value.length <= len) {
+    return [value];
   }
 
   let result = [];
